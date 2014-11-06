@@ -69,7 +69,7 @@ The following libraries were used in the implementation of Voicemail:
 - [grunt](https://github.com/gruntjs/grunt) build tool
 - [mocha](https://github.com/mochajs/mocha) test runner
 - [mockery](https://github.com/mfncooper/mockery) test mocking
-- [istanbul](https://www.npmjs.org/package/istanbul) test coverage
+- [istanbul](https://github.com/gotwarlost/istanbul) test coverage
 - [grunt-mocha-test](https://github.com/pghalliday/grunt-mocha-test) grunt mocha plugin
 - [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) grunt jshint plugin for linting
 - [grunt-mocha-istanbul](https://github.com/pocesar/grunt-mocha-istanbul) grunt mocha reporter for test coverage with istanbul
