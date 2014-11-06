@@ -21,3 +21,13 @@ voicemail.create();
 ```
 
 This allows the application to be run from a terminal or loaded as part of a larger application.
+
+The following dialplan is required for voicemail to work properly:
+
+```
+exten => 8888,1,NoOp()
+         same => n,Stasis(voicemail,email.com,1000,[busy|unavail])
+         same => n,Hangup()
+```
+
+Replace 8888 with your extension, email.com with the mailbox domain, and 1000 with the mailbox extension. The application name can be configured using the config.json file at the root of the voicemail repository.
