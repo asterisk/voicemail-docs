@@ -20,6 +20,7 @@ Part of designing Voicemail involved building a [prototype](https://github.com/a
 - Separate applications for Voicemail and VoicemailMain.
 - Modules separated into repositories and loaded via git url dependencies using NPM.
 - Modules are responsible for registering their own event handlers and cleaning up upon a channel exiting the application.
+- Promises over callbacks for asynchronous APIs.
 - Functions returning object literals with closures to support private data as opposed to multiple layers of prototypical objects.
 - Data layer organized by methods operating on given tables instead of grouping all methods together in an implementation of a large interface.
 - Data layer that dynamically build objects from database records using naming conventions as opposed to hard-coding fields.
