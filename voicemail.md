@@ -8,6 +8,8 @@ After all dependencies have been loaded, it connects to Asterisk via ARI and est
 
 It then registers an event handler for a StasisStart event. Once a channel enters into the application via Stasis, a [finite state machine](https://github.com/asterisk/node-voicemail-fsm) to drive voicemail business logic is spun up and the StasisStart event as well as an object representing the incoming channel are passed over to it at which point the finite state machines takes control of the application for the given channel.
 
+## app.js
+
 The application can be started by running the following:
 
 ```bash
@@ -23,6 +25,8 @@ voicemail.create();
 ```
 
 This allows the application to be run from a terminal or loaded as part of a larger application.
+
+## extensions.conf
 
 The following dialplan is required for voicemail to work properly:
 
