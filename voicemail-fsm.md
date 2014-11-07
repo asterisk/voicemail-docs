@@ -12,6 +12,36 @@ The finite state machine then uses the [Auth](auth.md) module to load the mailbo
 
 The finite state machine then uses the [Mailbox](mailbox.md) module to prepare to record the channel. The mailbox module then plays a help prompt to inform the user of whether the mailbox owner is busy or unavailable as well as instructions on leaving a message. A user may press a DTMF key defined in the config.json found in the root of the [Voicemail](voicemail.md) application to stop the help prompt played by the mailbox module and go straight to recording a message. After the help prompt finishes, whether by completing or due to the user skipping it, a recording is initiated on the channel. The user can then either hang up or use the same DTMF key defined in the config.json file to end the recording. If a user chooses to end the recording using the defined DTMF key, a prompt is played on the channel using the [Prompt](prompt.md) module to inform the user that the application is exiting and that the channel will be hung up momentarily.
 
+## test/tests.js
+
+All mocha unit tests live here. Tests can be run using the following command:
+
+```bash
+$ grunt mochaTest
+```
+
+## Gruntfile.js
+
+Grunt tasks for running a linter, unit tests, and code coverage live here. The linter and unit tests can be run using the following command:
+
+```bash
+$ grunt
+```
+
+The linter can be run using the following command:
+
+```bash
+$ grunt jshint
+```
+
+Code coverage can be run using the following command:
+
+```bash
+$ grunt coverage
+```
+
+## Dependencies
+
 Voicemail FSM depends on the following voicemail modules:
 
 - [Auth](auth.md)

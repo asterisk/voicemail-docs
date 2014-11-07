@@ -37,3 +37,44 @@ exten => 9999,1,NoOp()
 ```
 
 Replace 9999 with your extension, email.com with the mailbox domain, and 1000 with the mailbox extension. The application name can be configured using the config.json file at the root of the voicemail main repository.
+
+## test/tests.js
+
+All mocha unit tests live here. Tests can be run using the following command:
+
+```bash
+$ grunt mochaTest
+```
+
+## Gruntfile.js
+
+Grunt tasks for running a linter, unit tests, and code coverage live here. The linter and unit tests can be run using the following command:
+
+```bash
+$ grunt
+```
+
+The linter can be run using the following command:
+
+```bash
+$ grunt jshint
+```
+
+Code coverage can be run using the following command:
+
+```bash
+$ grunt coverage
+```
+
+## Dependencies
+
+Voicemail Main depends on the following voicemail modules:
+
+- [Voicemail Main FSM](voicemail-main-fsm.md)
+- [Auth](auth.md)
+- [Mailbox](mailbox.md)
+- [Config](config.md)
+- [Prompt](prompt.md)
+- [Data](data.md)
+- [Notify](notify.md)
+- [ARI Wrapper](ari.md)
