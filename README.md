@@ -1,15 +1,15 @@
 # Voicemail Documentation
 
-This repository documents the design and implementation of the Voicemail and Voicemail Main applications. These applications were built using Node.js and ARI to interface with Asterisk.
+This repository documents the design and implementation of the Voicemail and Voicemail Main applications. These applications were built using [Node.js](http://nodejs.org/) and [ARI](https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=29395573) to interface with Asterisk.
 
 - Voicemail can be found [here](https://github.com/asterisk/node-voicemail)
 - Voicemail Main can be found [here](https://github.com/asterisk/node-voicemail-main)
 
 ## Goals
 
-The goals of Voicemail was to implement a modular and configurable replacement for Asterisk Voicemail using ARI and Node.js that could be easily modified to improve and add to core features while also allowing individuals who desire more control over the behavior of voicemail to fork modules or the entire application if they so choose.
+The goals of Voicemail was to implement a modular and configurable replacement for Asterisk Voicemail using [ARI](https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=29395573) and [Node.js](http://nodejs.org/) that could be easily modified to improve and add to core features while also allowing individuals who desire more control over the behavior of voicemail to fork modules or the entire application if they so choose.
 
-Node.js was selected for it's asynchronous and events API which pair very well with ARI asynchronous HTTP API and WebSocket architecture. Node.js also enables a growing community of developers to built on voicemail using JavaScript.
+[Node.js](http://nodejs.org/) was selected for it's asynchronous and events API which pair very well with [ARI](https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=29395573) asynchronous HTTP API and WebSocket architecture. [Node.js](http://nodejs.org/) also enables a growing community of developers to built on voicemail using JavaScript.
 
 ## Design
 
@@ -18,7 +18,7 @@ Part of designing Voicemail involved building a [prototype](https://github.com/a
 - Finite state machines that drive all business logic.
 - Modules implemented with a finite state machine expose an API that abstract out their implementation.
 - Separate applications for Voicemail and Voicemail Main.
-- Modules separated into repositories and loaded via git url dependencies using NPM.
+- Modules separated into repositories and loaded via git url dependencies using [NPM](https://www.npmjs.org/).
 - Modules are responsible for registering their own event handlers and cleaning up upon a channel exiting the application.
 - Promises over callbacks for asynchronous APIs.
 - Functions returning object literals with closures to support private data as opposed to multiple layers of prototypical objects.
@@ -53,7 +53,7 @@ These modules are responsible for driving the applications through defined busin
 - [Mailbox](mailbox.md) is a helper to interact with mailboxes. It exposes both a writer (for leaving messages) and a reader (for listening to messages).
 - [Notify](notify.md) is a notification helper for interacting with MWI/sending emails, et cetera.
 - [Config](config.md) is a helper for fetching application and mailbox level configuration.
-- [ARI Wrapper](ari.md) is a helper that connects to a single Stasis application via ARI and acts as a client singleton.
+- [ARI Wrapper](ari.md) is a helper that connects to a single Stasis application via [ARI](https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=29395573) and acts as a client singleton.
 
 ### Libraries
 
