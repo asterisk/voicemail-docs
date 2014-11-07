@@ -1,5 +1,7 @@
 # Voicemail FSM Documentation
 
+## lib/fsm.js
+
 [Voicemail FSM](https://github.com/asterisk/node-voicemail-fsm) is a finite state machine responsible for enforcing all business logic for the [Voicemail](voicemail.md) application.
 
 It accepts a StasisStart event and an object representing the channel that entered the voicemail application and takes control of the application. All cleanup is done by this module or modules used by it. Once a new instance of a finite state machine has been created, voicemail no longer has to interact with the finite state machine module.

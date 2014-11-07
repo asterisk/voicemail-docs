@@ -1,5 +1,7 @@
 # Voicemail Application Documentation
 
+## lib/voicemail.js
+
 [Voicemail](https://github.com/asterisk/node-voicemail) is the application responsible for allowing users to leave messages. Its main responsibility is to bootstrap the application by loading the appropriate dependencies.
 
 After all dependencies have been loaded, it connects to Asterisk via ARI and establishes a WebSocket connection so that the voicemail Stasis application is ready for incoming requests.

@@ -1,5 +1,7 @@
 # Voicemail Main Application Documentation
 
+## lib/voicemail-main.js
+
 [Voicemail Main](https://github.com/asterisk/node-voicemail-main) is the application responsible for allowing users to listen to messages in their mailbox. Its main responsibility is to bootstrap the application by loading the appropriate dependencies.
 
 After all dependencies have been loaded, it connects to Asterisk via ARI and establishes a WebSocket connection so that the voicemail-main Stasis application is ready for incoming requests.
