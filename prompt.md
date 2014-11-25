@@ -60,3 +60,4 @@ Voicemail Prompt depends on the following voicemail modules:
 
 - [Config](config.md)
 - [ARI Wrapper](ari.md)
+- [Logging](logging.md)

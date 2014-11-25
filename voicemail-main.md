@@ -78,3 +78,4 @@ Voicemail Main depends on the following voicemail modules:
 - [Data](data.md)
 - [Notify](notify.md)
 - [ARI Wrapper](ari.md)
+- [Logging](logging.md)

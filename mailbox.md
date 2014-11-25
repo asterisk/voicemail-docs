@@ -221,3 +221,4 @@ Voicemail Mailbox depends on the following voicemail modules:
 - [Data](data.md)
 - [Prompt](prompt.md)
 - [Notify](notify.md)
+- [Logging](logging.md)

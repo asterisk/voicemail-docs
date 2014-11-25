@@ -4,7 +4,7 @@
 
 ### db.js
 
-The [Voicemail Data Access Layer](https://github.com/asterisk/node-voicemail-data) module is exported in this file. An object keyed by repository name is returned given a connection string. The object is cached using the connection string so that asking for repositories for a given connection string more than once will yield the same object. The object returned by calling the module export with a database config contains the following keys:
+The [Voicemail Data Access Layer](https://github.com/asterisk/node-voicemail-data) module is exported in this file. When called with a database configuration object and all required dependencies, an object keyed by repository name is returned given the connection string found in the database configuration object. The object is cached using the connection string so that asking for repositories for a given connection string more than once will yield the same object. The object returned by calling the module export with a database config contains the following keys:
 
 - context
 - mailbox
@@ -556,4 +556,6 @@ $ grunt coverage
 
 ## Dependencies
 
-Voicemail Data Access Layer does not depend on any voicemail modules.
+Voicemail Data Access Layer depends on the following voicemail modules:
+
+- [Logging](logging.md)

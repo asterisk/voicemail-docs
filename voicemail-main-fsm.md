@@ -60,3 +60,4 @@ Voicemail Main FSM depends on the following voicemail main modules:
 - [Auth](auth.md)
 - [Mailbox](mailbox.md)
 - [Config](config.md)
+- [Logging](logging.md)

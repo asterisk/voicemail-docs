@@ -4,7 +4,7 @@
 
 [Voicemail Config](https://github.com/asterisk/node-voicemail-config) is a module responsible for application configuration for [Voicemail](voicemail.md) and [Voicemail Main](voicemail-main.md) as well as mailbox configuration.
 
-When called with an instance of the [Data](data.md) module, it returns an object with methods that can be used to get either application configuration or mailbox configuration. The object exposes the following methods:
+When called with all required dependencies, it returns an object with methods that can be used to get either application configuration or mailbox configuration. The object exposes the following methods:
 
 ### getAppConfig
 
@@ -49,3 +49,4 @@ $ grunt coverage
 Voicemail Config depends on the following voicemail modules:
 
 - [Data](data.md)
+- [Logging](logging.md)

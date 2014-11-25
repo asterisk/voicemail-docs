@@ -75,3 +75,4 @@ Voicemail Auth depends on the following voicemail modules:
 
 - [Data](data.md)
 - [Prompt](prompt.md)
+- [Logging](logging.md)

@@ -57,3 +57,4 @@ Voicemail Notify depends on the following voicemail modules:
 - [Data](data.md)
 - [Config](config.md)
 - [ARI Wrapper](ari.md)
+- [Logging](logging.md)

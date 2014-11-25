@@ -54,6 +54,7 @@ These modules are responsible for driving the applications through defined busin
 - [Notify](notify.md) is a notification helper for interacting with MWI/sending emails, et cetera.
 - [Config](config.md) is a helper for fetching application and mailbox level configuration.
 - [ARI Wrapper](ari.md) is a helper that connects to a single Stasis application via [ARI](https://wiki.asterisk.org/wiki/pages/viewpage.action?pageId=29395573) and acts as a client singleton.
+- [Logging](logging.md) is a helper for creating loggers for voicemail applications.
 
 ### Libraries
 
@@ -67,6 +68,7 @@ The following libraries were used in the implementation of Voicemail:
 - [compose](https://github.com/kriszyp/compose) object composition for overriding data access behavior
 - [case](https://github.com/nbubna/Case) string case manipulation for converting from database column names to object properties and back
 - [moment](https://github.com/moment/moment) date time manipulation
+- [bunyan](https://github.com/trentm/node-bunyan) logging
 - [grunt](https://github.com/gruntjs/grunt) build tool
 - [mocha](https://github.com/mochajs/mocha) test runner
 - [mockery](https://github.com/mfncooper/mockery) test mocking

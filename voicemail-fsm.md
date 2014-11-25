@@ -48,3 +48,4 @@ Voicemail FSM depends on the following voicemail modules:
 - [Mailbox](mailbox.md)
 - [Config](config.md)
 - [Prompt](prompt.md)
+- [Logging](logging.md)
